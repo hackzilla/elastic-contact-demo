@@ -1,0 +1,11 @@
+{
+    "name": "hackzilla/elastic-simple-demo",
+    "license": "MIT",
+    "type": "project",
+    "description": "Simple demo to support a presentation",
+    "require": {
+        "php": ">=5.5.9",
+        "elasticsearch/elasticsearch": "^5.0.0"
+    }
+}
+
