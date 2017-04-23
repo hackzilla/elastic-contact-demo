@@ -4,9 +4,7 @@
         .pagination a {
             width: 100px;
             height: 30px;
-            float: left;
             padding-top: 10px;
-            margin-right: 4em;
             height: 30px;
             padding-top: 10px;
         }
@@ -21,6 +19,8 @@
             color: white;
             text-align: center;
             border-radius: 25px;
+            float: left;
+            margin-right: 4em;
         }
 
         table {
@@ -103,6 +103,7 @@ echo '
         <th>ID</th>
         <th>First Name</th>
         <th>Last Name</th>
+        <th>Email</th>
         <th>Actions</th>
     </tr>
 </thead>
@@ -114,7 +115,11 @@ foreach ($response['hits']['hits'] as $document) {
         <td>'.$document['_id'].'</td>
         <td>'.$document['_source']['first_name'].'</td>
         <td>'.$document['_source']['last_name'].'</td>
-        <td><a href="/fetch.php?id='.$document['_id'].'" class="button">view</a></td>
+        <td>'.$document['_source']['email'].'</td>
+        <td>
+            <a href="/delete-document.php?id='.$document['_id'].'" class="button">delete</a>
+            <a href="/fetch.php?id='.$document['_id'].'" class="button">view</a>
+        </td>
     </tr>
 ';
 
