@@ -5,6 +5,7 @@
     "description": "Simple demo to support a presentation",
     "require": {
         "php": ">=5.5.9",
+        "fzaninotto/faker": "^1.0",
         "elasticsearch/elasticsearch": "^5.0.0"
     }
 }
