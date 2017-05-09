@@ -8,7 +8,7 @@ You will need to [install docker](https://store.docker.com/search?offering=commu
 # Installation
 
 * git clone git@github.com:hackzilla/elastic-contact-demo.git
-* composer install
+* composer install --no-interaction --working-dir=./code;
 * docker-compose up -d
 * ./connect.sh
 
